@@ -11,7 +11,7 @@ class billApp:
         title = Label(self.root, text="Billing System", font="AngsanaUPC 20 bold", bg="#5F4B8B", fg="yellow", bd="7", relief="groove", pady=10)
         title.pack(fill=X)
 
-        #--------------------------------Variable-------------------------
+        #---------------Variable------------
 
         #-------Customer Detail--------
         self.cust_name = StringVar()
@@ -60,7 +60,7 @@ class billApp:
         self.sport_tax = StringVar()
 
         
-        ##########-----Search Customer's Detail-------
+        ##########-----Customer's Detail-------
         f1 = LabelFrame(self.root, text="Customer Details", bd=7, relief=GROOVE, font="lucida 10 bold", fg="yellow", bg="#5F4B8B", pady=6)
         f1.place(x=0, y=50, relwidth=1)
 
@@ -82,7 +82,7 @@ class billApp:
         bill_btn = Button(f1, text="Search", command=self.searchbill, bd=5, width=8, relief=RAISED, font=("lucida", 10, "bold"))
         bill_btn.grid(row=0,column=6, padx=15, pady=10)
 
-        #--------Device Frame--------
+        #--------Electronic Device Frame--------
         f2 = LabelFrame(self.root, text="Devices", bd=7, relief=GROOVE, font="lucida 10 bold", fg="yellow", bg="#5F4B8B" )
         f2.place(x=3, y=141, width=300, height=395)
 
@@ -121,7 +121,7 @@ class billApp:
         pp_txt = Entry(f2, textvariable=self.pp, width=10, font="ariel", bd=3, relief=SUNKEN)
         pp_txt.grid(row=6, column=1, pady=10, padx=15)
 
-        #----------- Instrument frame---------
+        #-----------Musical Instrument frame---------
         f3 = LabelFrame(self.root, text="Musical Instrument", bd=7, relief=GROOVE, font="lucida 10 bold", fg="yellow", bg="#5F4B8B" )
         f3.place(x=303, y=141, width=300, height=395)
 
@@ -161,7 +161,7 @@ class billApp:
         sant_txt.grid(row=6, column=1, pady=10, padx=15)
 
 
-        #----------- Device 3 frame---------
+        #----------- Sports Gear frame---------
         f4 = LabelFrame(self.root, text="Sports", bd=7, relief=GROOVE, font="lucida 10 bold", fg="yellow", bg="#5F4B8B" )
         f4.place(x=603, y=141, width=300, height=395)
 
@@ -214,7 +214,7 @@ class billApp:
         scrollbar.config(command=self.text.yview)
         
         
-        #----Bill Detail Area(Buttons)
+        #----Bill Detail Area
         f6 = LabelFrame(self.root, text="Bill detail", bd=7, relief=GROOVE, font="lucida 10 bold", fg="yellow", bg="#5F4B8B" )
         f6.place(x=0, y=537, height=140,  relwidth=1)
         
@@ -475,7 +475,6 @@ class billApp:
     def clear(self):
         cl = messagebox.askyesno("Clear App", "Do you want to clear the Aap?")
         if cl>0:
-        #--------------------------------Variable-------------------------
 
             #-------Customer Detail--------
             self.cust_name.set("")
