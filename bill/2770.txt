@@ -1,0 +1,18 @@
+	  Departmental Store 
+
+ Bill Number : 2770
+ Customer name : n
+ Phone Number : 9
+=====================================
+Product		QTY		Price
+=====================================
+Mobile 		1 		10000
+Guitar 		1 		15000
+Bat 		1 		1000
+-------------------------------------
+Device Tax			 500.0 Rs
+Instrument Tax			 1050.0 Rs
+Sports Tax			 60.0 Rs
+-------------------------------------
+Total Bill			 27610.0
+-------------------------------------
